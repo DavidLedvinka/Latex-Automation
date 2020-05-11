@@ -1,0 +1,47 @@
+% Style template for taking course notes
+\ProvidesPackage{coursenotes}
+
+% PACKAGES
+%%%%%%%%%%
+
+% Essentials
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+% Shortcuts
+\usepackage{physics}
+
+% Drawing
+\usepackage{tikz}
+
+% Bibliography
+%\usepackage{biblatex}
+
+% PACKAGE SETTINGS
+
+% amsthm structure
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+\newtheorem{proposition}{Proposition}[theorem]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{claim}{Claim}[theorem]
+\newtheorem{fact}{Fact}[theorem]    
+\newtheorem{remark}{Remark}[theorem]
+\newtheorem{observation}{Observation}[theorem]
+\newtheorem{example}{Example}[theorem]
+
+% biblatex source file
+%\addbibresource{bibliography.bib}
+
+% USER-DEFINED MACROS
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\E}{\mathbb{E}}
