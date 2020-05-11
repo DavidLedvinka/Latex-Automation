@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Climb the directory tree to find main.tex
+found=false
+until $found; do
+    if [[ -f "main.tex" ]]; then
+        found=true
+    elif [[ "$PWD" == "/" ]]; then
+        echo "Error: No main.tex file found" 1>&2
+        exit 64
+    else
+        cd ..
+    fi
+done
+
+echo $PWD
