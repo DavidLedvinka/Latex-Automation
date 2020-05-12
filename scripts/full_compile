@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+#TODO: Full compile should check to see if there are any differences in the file and
+# if not dont recompile.
+
+#TODO: Print success message upon success and otherwise error
+
 cd $(find_main)
 pdflatex --interaction=batchmode --output-director=.auxillary_files main.tex
 mv .auxillary_files/main.pdf $PWD
